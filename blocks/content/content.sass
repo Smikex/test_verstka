@@ -1,0 +1,144 @@
+.content
+    display: flex
+    max-width: 768px
+    margin: auto
+    flex-wrap: wrap
+    justify-content: space-between
+.block
+    display: flex
+    margin-top: 10px
+    min-height: 155px
+    align-items: flex-end
+    padding: 15px
+    &__header
+        &--white
+            color: #fff
+        &--big_white
+            font-size: 18px
+            color: #fff
+            line-height: 26px
+            @media #{$xs} 
+                padding: 30px
+                text-align: center
+        &--scroll
+            height: 200px
+    &--wrap
+        margin-top: 0
+        padding: 0
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 768px   
+    &--first
+        flex-wrap: nowrap  
+        display: flex 
+        align-items: stretch
+        height: 100% 
+    &--hero
+        @media #{$xs}  
+            order: -1
+    &--third
+        width: 100%
+        min-height: 100px
+        &:after
+            content: ''
+            padding-bottom: 100%
+            display: block
+    &--more
+        margin-left: 10px
+        margin-right: 0
+    &--fill
+        flex-basis: 100%
+        margin-right: 0
+        margin-left: 0
+        // &:after
+        //     content: ''
+        //     padding-bottom: 50%
+        //     display: block
+    &--half
+        max-width: calc(50% - 5px)
+        flex-shrink: 0
+        flex-grow: 0
+        flex-basis: 50%
+        // &:after
+        //     content: ''
+        //     padding-bottom: 100%
+        //     display: block
+    &--big
+        flex-basis: 64%
+        display: flex
+        margin-right: 10px
+        padding: 0
+    &--small
+        flex-direction: column    
+        flex-basis: 36%
+        padding: 0
+        margin: 0
+        height: 100%
+    &--scroll
+        overflow: auto
+        padding: 0  
+        margin: 0
+    &--gray
+        background-color: #E8EBED
+    &--darkgray
+        background-color: #A2A9B7    
+    &--intro    
+        background-color: #90BCE8
+        @media #{$xs}  
+            order: -1
+    &--person    
+        background-color: #FEBF26
+    &--peach
+        background-color: #FFAA87
+    &--purple
+        background-color: #C7ABD4
+    &--red
+        background-color: #F55E62
+    &--green
+        background-color: #E3EBD3
+    &--boat
+        background-image: url('../img/image.png')
+        background-size: cover
+    @media #{$_xs} 
+        &--user
+            display: none               
+    @media #{$xs}
+        &--desktop3
+            flex-basis: 32.5%
+        &--desktop1
+            flex-basis: 66%
+        &--order-1
+            order: -1              
+        &--order-2
+            order: -2     
+        &--order1
+            order: 1  
+        &--order2
+            order: 2
+        &--desktop_align_top
+            align-items: flex-start                                                         
+.block.block--big.block--green.block--more.block--user
+    align-items: flex-start 
+
+.user
+    width: 100%
+    padding: 15px
+    &__details
+        display: flex
+        flex-wrap: nowrap
+        padding-top: 30px
+    &__border
+        border-bottom: 1px dashed #000
+        flex-basis: 100%   
+        // width: 300px
+    &__left_col
+         display: flex
+         align-items: flex-end
+    &__right_col
+        display: flex
+        align-items: flex-end
+    &__first_name, &__first_name_data   
+        flex-basis: 10%
+    &__last_name 
+        flex-basis: 10%
+          

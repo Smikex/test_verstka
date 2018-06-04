@@ -1,0 +1,20 @@
+{
+  "name": "start",
+  "description": "gulp_pug_sass_bem",
+  "main": "index.js",
+  "authors": [
+    "Smikex"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
